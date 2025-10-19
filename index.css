@@ -1,9 +1,19 @@
 body {
     background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .envelope-wrapper {
-    height: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
 }
 
 #envelope {
@@ -12,9 +22,6 @@ body {
     width: 280px;
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
-    margin-left: auto;
-    margin-right: auto;
-    top: 50%;
     background-color: #FF6863;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
@@ -252,26 +259,26 @@ body {
     margin: 150px;
 }
 
-/* Responsive adjustments */
+/* Responsive adjustments for tablets */
 @media (max-width: 900px) {
     .valentine {
         font-size: 48px;
         margin: 80px 20px;
     }
     #envelope {
-        width: 240px;
-        height: 160px;
-        top: 40%;
+        width: 260px;
+        height: 170px;
+        top: 35%;
     }
     .flap {
-        border-top: 90px solid #FF6863;
-        border-left: 120px solid transparent;
-        border-right: 120px solid transparent;
+        border-top: 95px solid #FF6863;
+        border-left: 130px solid transparent;
+        border-right: 130px solid transparent;
     }
     .pocket {
-        border-left: 120px solid #FF8BA0;
-        border-right: 120px solid #FF8BA0;
-        border-bottom: 85px solid #FFA8B5;
+        border-left: 130px solid #FF8BA0;
+        border-right: 130px solid #FF8BA0;
+        border-bottom: 90px solid #FFA8B5;
     }
     .letter {
         width: 92%;
@@ -279,48 +286,129 @@ body {
         top: 4%;
         border-radius: 8px;
     }
-    .words { font-size: 14px; left: 8%; width: 84%; }
-    .reset button { min-width: 120px; margin-top: 60px; }
+    .words { 
+        font-size: 15px; 
+        left: 8%; 
+        width: 84%; 
+        line-height: 1.4;
+    }
+    .reset button { 
+        min-width: 130px; 
+        margin-top: 70px;
+        padding: 12px;
+        font-size: 15px;
+    }
 }
 
+/* Responsive adjustments for mobile phones */
 @media (max-width: 480px) {
-    body { background-color: #fff; }
-    .envelope-wrapper { height: auto; padding: 40px 0 10px; }
+    body { 
+        background-color: #fff;
+        overflow-x: hidden;
+    }
+    .envelope-wrapper { 
+        height: auto; 
+        padding: 60px 0 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     #envelope {
-        width: 220px;
-        height: 150px;
-        top: 10%;
+        width: 260px;
+        height: 165px;
+        top: 0;
         transform: translateY(0);
-        margin-top: 10px;
+        margin-top: 0;
     }
     .flap {
-        border-top: 80px solid #FF6863;
-        border-left: 110px solid transparent;
-        border-right: 110px solid transparent;
+        border-top: 90px solid #FF6863;
+        border-left: 130px solid transparent;
+        border-right: 130px solid transparent;
     }
     .pocket {
-        border-left: 110px solid #FF8BA0;
-        border-right: 110px solid #FF8BA0;
-        border-bottom: 70px solid #FFA8B5;
+        border-left: 130px solid #FF8BA0;
+        border-right: 130px solid #FF8BA0;
+        border-bottom: 80px solid #FFA8B5;
     }
     .letter {
         width: 94%;
-        height: 92%;
-        top: 5%;
-        border-radius: 8px;
-        box-shadow: 0 1px 18px rgba(0,0,0,0.12);
+        height: 93%;
+        top: 4%;
+        border-radius: 10px;
+        box-shadow: 0 2px 20px rgba(0,0,0,0.15);
     }
-    .words { position: absolute; left: 8%; width: 84%; font-size: 13px; }
-    .line1 { top: 14%; }
-    .line2 { top: 28%; }
-    .line3 { top: 46%; }
-    .line4 { top: 60%; }
-    .reset { margin-top: 10px; }
-    .reset button { min-width: 110px; margin: 8px; padding: 8px; }
-    .valentine { font-size: 36px; margin: 60px 12px; }
-    /* ensure readmore link (if present) is visible */
-    .readmore-button { font-size: 14px; padding: 8px 12px; }
+    .words { 
+        position: absolute; 
+        left: 6%; 
+        width: 88%; 
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    .line1 { 
+        top: 12%;
+        font-weight: 600;
+    }
+    .line2 { 
+        top: 26%;
+    }
+    .line3 { 
+        top: 48%;
+    }
+    .line4 { 
+        top: 64%;
+        font-size: 18px;
+    }
+    .reset { 
+        margin-top: 30px;
+        padding: 0 15px;
+    }
+    .reset button { 
+        min-width: 120px; 
+        margin: 8px 6px; 
+        padding: 12px 16px;
+        font-size: 14px;
+        border-width: 2px;
+    }
+    .valentine { 
+        font-size: 36px; 
+        margin: 60px 15px;
+    }
+    .open .letter {
+        transform: translatey(-90px);
+    }
+    .hearts {
+        top: 85px;
+    }
+}
+
+/* Extra small mobile phones */
+@media (max-width: 360px) {
+    #envelope {
+        width: 240px;
+        height: 155px;
+    }
+    .flap {
+        border-top: 85px solid #FF6863;
+        border-left: 120px solid transparent;
+        border-right: 120px solid transparent;
+    }
+    .pocket {
+        border-left: 120px solid #FF8BA0;
+        border-right: 120px solid #FF8BA0;
+        border-bottom: 75px solid #FFA8B5;
+    }
+    .words { 
+        font-size: 13px;
+    }
+    .line4 {
+        font-size: 16px;
+    }
 }
 
 /* Make sure clickable elements are accessible on touch devices */
-a, button { -webkit-tap-highlight-color: rgba(0,0,0,0.1); }
+a, button { 
+    -webkit-tap-highlight-color: rgba(255, 104, 99, 0.2);
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+}
