@@ -1,31 +1,148 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="index.css" rel="stylesheet">
-        <link href="readmore.css" rel="stylesheet">
-        <title>PAGE | 02</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <div class="valentine">
-            <p><a href="index.html" class="reset-link">Back to card</a></p>
-            <div class = "notes">
-                <h1 class="line1">HAPPY ANNIVERSARY 1 YEAR 9 MONTHS</h1>
-                <p class="line2">Dear my baby,</p>
-                <p class="line3"><dd>It's been 1 year and 9 months that we are together. Eventhough lately we always have some misunderstandings, arguments, and fights.
-                    But I want you to know that I am still loving you with all my heart as the same. I know I cannot and I never be perfect, sometimes I got mad or sad and have showed you my bad side. But I want you to know that I never want to act like that to you.
-                    I just want to know that would you care about me as I care about you or not.</p>
-                <p class="line4"><dd>If lately I keep asking you "Do you still love me?" or "Are you sure you miss me?" it is just because there is a lot of things that made me insecure and about your actions sometimes that made me got questions. I am so sorry if it makes you annoyed or uncomfortable.
-                    I just want to feel safe and loved by you. I really love you and I don't want to lose you.</p>
-                <p class="line5">Thank you to always forgive me for my mistakes even it is small or big, and still be beside me even sometimes you might annoyed of taking care of dumb kid like me. I am really appreciate every good things you have done or said to me.
-                    You will always be my lover, my best friend, my family, and my everything. I hope we can stay last long as we can and get less and less fights in the future.</p>
-                <p class="line6">love,</p>
-                <p class="line7">The person who love you all her heart</p>
-            </div>
-        </div>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    </body>
+body {
+    background-color: #fff0f6;
+}
 
-</html>
+.valentine {
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+.notes {
+    width: 60%;
+    margin: auto;
+    text-align: left;
+    font-size: 20px;
+    line-height: 1.6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    padding: 25px;
+    border-radius: 20px;
+    margin-top: -50px;
+    width: auto;
+    height: auto;
+}
+
+.notes p {
+    font-size: 20px;
+}
+
+.reset-link {
+    font-weight: 800;
+    font-style: normal;
+    transition: all 0.1s linear;
+    background-color: transparent;
+    border: solid 2px #FF6863;
+    border-radius: 4px;
+    color: #FF6863;
+    display: inline-block;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 20px;
+    margin-top: 20px;
+    padding: 10px;
+    line-height: 2em;
+    text-decoration: none;
+    min-width: 150px;
+    outline: none;
+    margin-right: 100%;
+    margin-bottom: -100px;
+}
+
+.line1 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.line6 {
+    text-align: right;
+}
+
+.line7 {
+    text-align: right;
+}
+
+/* Responsive adjustments for tablets */
+@media (max-width: 900px) {
+    .notes {
+        width: 85%;
+        padding: 25px;
+        margin-top: -30px;
+        border-radius: 16px;
+    }
+    .line1 { 
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    .notes p { 
+        font-size: 20px;
+        line-height: 1.6;
+    }
+    .reset-link {
+        margin-right: 0;
+        margin-bottom: -80px;
+    }
+}
+
+/* Responsive adjustments for mobile phones */
+@media (max-width: 480px) {
+    body {
+        overflow-x: hidden;
+    }
+    .valentine { 
+        margin-top: 20px; 
+        padding: 8px; 
+    }
+    .notes { 
+        width: 92%; 
+        padding: 20px 16px; 
+        margin-top: -10px; 
+        box-shadow: 0 3px 15px rgba(0,0,0,0.12);
+        border-radius: 12px;
+    }
+    .line1 { 
+        font-size: 16px; 
+        text-align: center;
+        margin-bottom: 15px;
+        line-height: 1.5;
+    }
+    .notes p { 
+        font-size: 16px;
+        line-height: 1.7;
+        margin-bottom: 14px;
+    }
+    .reset-link { 
+        position: relative; 
+        margin: 15px auto 10px auto;
+        display: block;
+        min-width: 140px;
+        max-width: 180px;
+        text-align: center;
+        padding: 12px 16px;
+    }
+    .line6 { 
+        margin-top: 20px;
+        text-align: right;
+    }
+    .line7 { 
+        text-align: right;
+        font-style: italic;
+    }
+}
+
+/* Extra small mobile phones */
+@media (max-width: 360px) {
+    .notes {
+        width: 94%;
+        padding: 16px 12px;
+    }
+    .line1 {
+        font-size: 16px;
+    }
+    .notes p {
+        font-size: 16px;
+    }
+}
