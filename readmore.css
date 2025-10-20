@@ -57,6 +57,11 @@ body {
     margin-bottom: 20px;
 }
 
+.line3, .line4, .line5 {
+    text-indent: 2em;
+    text-align: left;
+}
+
 .line6 {
     text-align: right;
 }
