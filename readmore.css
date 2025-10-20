@@ -26,11 +26,8 @@ body {
 }
 
 .notes p {
-    font-size: 16px;
-    line-height: 1.7;
-    margin-bottom: 14px;
+    font-size: 20px;
 }
-
 
 .reset-link {
     font-weight: 800;
@@ -55,21 +52,97 @@ body {
 }
 
 .line1 {
-    font-size: 16px;
+    font-size: 20px;
     font-weight: bold;
     margin-bottom: 20px;
-    text-align: center;
-    margin-bottom: 15px;
-    line-height: 1.5;
 }
 
 .line6 {
     text-align: right;
-    margin-top: 20px;
 }
 
 .line7 {
     text-align: right;
-    font-style: italic;
+}
 
+/* Responsive adjustments for tablets */
+@media (max-width: 900px) {
+    .notes {
+        width: 85%;
+        padding: 25px;
+        margin-top: -30px;
+        border-radius: 16px;
+    }
+    .line1 { 
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    .notes p { 
+        font-size: 20px;
+        line-height: 1.6;
+    }
+    .reset-link {
+        margin-right: 0;
+        margin-bottom: -80px;
+    }
+}
+
+/* Responsive adjustments for mobile phones */
+@media (max-width: 480px) {
+    body {
+        overflow-x: hidden;
+    }
+    .valentine { 
+        margin-top: 20px; 
+        padding: 8px; 
+    }
+    .notes { 
+        width: 92%; 
+        padding: 20px 16px; 
+        margin-top: -10px; 
+        box-shadow: 0 3px 15px rgba(0,0,0,0.12);
+        border-radius: 12px;
+    }
+    .line1 { 
+        font-size: 16px; 
+        text-align: center;
+        margin-bottom: 15px;
+        line-height: 1.5;
+    }
+    .notes p { 
+        font-size: 16px;
+        line-height: 1.7;
+        margin-bottom: 14px;
+    }
+    .reset-link { 
+        position: relative; 
+        margin: 15px auto 10px auto;
+        display: block;
+        min-width: 140px;
+        max-width: 180px;
+        text-align: center;
+        padding: 12px 16px;
+    }
+    .line6 { 
+        margin-top: 20px;
+        text-align: right;
+    }
+    .line7 { 
+        text-align: right;
+        font-style: italic;
+    }
+}
+
+/* Extra small mobile phones */
+@media (max-width: 360px) {
+    .notes {
+        width: 94%;
+        padding: 16px 12px;
+    }
+    .line1 {
+        font-size: 16px;
+    }
+    .notes p {
+        font-size: 16px;
+    }
 }
